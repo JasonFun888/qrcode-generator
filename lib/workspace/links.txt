@@ -1,0 +1,13 @@
+
+http://baidu.com
+
+上一行会生成1.png,这一行是自定义文件名 http://weibo.com
+
+一行一个，空行会被忽略 http://zhihu.com
+
+    多余的空格不影响识别        http://z.cn      
+
+  解析 是以空格 分割，如果 数组长度 > 2，最后一个值  会理解成  链接，前面  的值  会合并成 文件名        http://taobao.com
+
+
+
