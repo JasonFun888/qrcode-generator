@@ -33,6 +33,8 @@ module QrcodeGenerator
         line = line.strip.chomp
         next if line.empty?
 
+        line = line.gsub("\t", " ") #tab to space
+
         if reverse_point = line.reverse.index(/[ ,]/)
           point = line.length - reverse_point
           link = line[point..-1]

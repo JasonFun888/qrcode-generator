@@ -1,5 +1,5 @@
 # coding: utf-8
-$:.push File.expand_path('lib', __dir__)
+$:.unshift File.expand_path('lib', __dir__)
 
 require "qrcode-generator/version"
 
