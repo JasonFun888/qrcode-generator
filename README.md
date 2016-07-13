@@ -4,7 +4,7 @@
 
 ## 安装
 
-```sh
+```text
 $: gem install qrcode-generator
 ```
 
@@ -15,14 +15,14 @@ $: gem install qrcode-generator
 ## 使用说明
 
 ### 简单示例
-```bash
+```text
 $: mkdir anEmptyFolder
 
 $: cd anEmptyFolder
 
 $: qrcode-generator init
 
-$: qrcode-generator run
+$: qrcode-generator run --width=2000
 
 ```
 
@@ -39,7 +39,7 @@ $: qrcode-generator run
 3. 执行`qrcode-generator run`，这个命令会读取links.txt里的数据,并执行二维码生成操作，二维码存放在`qrcode <命令执行时间>`目录中
 
 ### 命令可选参数说明
-```bash
+```text
 $ qrcode-generator --help
 
 usage: qrcode-generator <command> [options]
@@ -55,6 +55,6 @@ usage: qrcode-generator <command> [options]
         --level=h                    change qrcode level, support: l,m,q,h
         --logo=true                  if you don't want logo, set false
         --logo_denominator=3         if set 3, then the logo's width will equal to 1/3 of whole image width
-        
+
 ```
 
