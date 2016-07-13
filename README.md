@@ -41,5 +41,20 @@ $: qrcode-generator run
 ### 命令可选参数说明
 ```bash
 $ qrcode-generator --help
+
+usage: qrcode-generator <command> [options]
+
+    the commands are:
+        init        init workspace in current directory
+        run         start generator qrcodes
+
+    the options are:
+        --width=400                  chnage qrcode image width
+        --size=4                     change qrcode size
+        --border=1                   change qrcode border width
+        --level=h                    change qrcode level, support: l,m,q,h
+        --logo=true                  if you don't want logo, set false
+        --logo_denominator=3         if set 3, then the logo's width will equal to 1/3 of whole image width
+        
 ```
 
