@@ -15,7 +15,7 @@ Gem::Specification.new 'qrcode-generator',QrcodeGenerator::Version do |spec|
   spec.files         = gem_files
 
   spec.add_dependency  "rqrcode", "~> 0.4.2"
-  spec.add_dependency  "rmagick", "~> 2.15.4", :require => 'RMagick'
+  spec.add_dependency  "rmagick", "~> 2.15.4"
 
   spec.executables = ["qrcode-generator"]
 
