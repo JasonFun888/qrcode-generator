@@ -55,6 +55,7 @@ usage: qrcode-generator <command> [options]
         --level=h                    change qrcode level, support: l,m,q,h
         --logo=true                  if you don't want logo, set false
         --logo_denominator=3         if set 3, then the logo's width will equal to 1/3 of whole image width
+        --tag=someString             if set 'someString', will add '(someString)' to the end of filename
 
 ```
 
