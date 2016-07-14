@@ -1,16 +1,18 @@
 # 二维码批量生成工具，支持内嵌logo
 
-##
+## 环境依赖
+
+1. 安装 [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
+
 
 ## 安装
 
 ```text
+
+$: gem install rmagick -v 2.15.4
+
 $: gem install qrcode-generator
 ```
-
-## 环境依赖
-
-1. 安装 [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 
 ## 使用说明
 
