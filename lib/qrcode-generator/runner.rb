@@ -29,6 +29,8 @@ module QrcodeGenerator
 
       FileUtils.mkdir(destSpace) if !File.directory?(destSpace)
 
+      filename_tag = parse_filename_tag
+
       File.readlines(txtPath).each do |line|
         line = line.strip.chomp
         next if line.empty?
@@ -45,10 +47,14 @@ module QrcodeGenerator
           title = link
         end
 
-        filename = sanitize_filename(title) + ".png"
+        filename = sanitize_filename(title) + filename_tag + ".png"
 
         to_qrcode_file(link, filename)
       end
+    end
+
+    def parse_filename_tag
+      options[:tag] ? "(#{options[:tag]})" : ""
     end
 
     def sanitize_filename(basename)
