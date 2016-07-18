@@ -4,6 +4,8 @@
 
 1. 安装 [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
 
+   ImageMagick需要安装"6.9.5"版本，最新的版本貌似会导致rmagick无法安装
+
 
 ## 安装
 

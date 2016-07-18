@@ -16,7 +16,7 @@ module QrcodeGenerator
       time = Time.now
 
       dayStr = time.strftime('%m-%d')
-      clockStr = time.strftime('%H:%M:%S')
+      clockStr = time.strftime('%H.%M.%S')
       @destSpace = File.join(workspace, "qrcode #{dayStr} #{clockStr}")
     end
 
